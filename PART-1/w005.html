@@ -3,14 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Input Types</title>
 </head>
 <body>
     <h1>Login..</h1>
     <form action="">
         <input type="text" placeholder="Username" autofocus><br><br>
-        <input type="text" placeholder="Password"><br><br>
+        <input type="password" placeholder="Password" required><br><br>
+        <input type="email" placeholder="Enter Email"><br><br>
+        <input type="number" placeholder="Enter Phone"><br><br>
+        <input type="date">
+        <input type="datetime-local"><br><br>
+        <input type="time">
+        <input type="month">
+        <input type="week"><br><br>
+        <input type="radio">Select</input>
+        <input type="color">
+        <br><br>
+        <input type="file"><br><br>
+        <input type="url" placeholder="Enter Url"><br>
+        <textarea rows="4" cols="45" placeholder="Enter the text here"></textarea><br>
+        <select>
+            <optgroup label="India">
+                <option value="">Telangana</option>
+                <option value="">Munbai</option>
+                <option value="">Banglore</option>
+            </optgroup >
+
+            <optgroup label="USA">
+                <option value="">Texas</option>
+                <option value="">missoure</option>
+            </optgroup>
+            <optgroup label="UK">
+                <option value="">London</option>
+                <option value="">Manchester</option>
+            </optgroup>
+            <input type="checkbox" id="chk">
+            <label for="chk">Remember Me</label>
+        </select><br>
+        <input type="range">
+        <br>
+        <input type="radio" name="t1" checked>Task1</input><br>
+        <input type="radio" name="t1">Task2</input><br>
+        <input type="checkbox" checked>Java</input><br>
+        <input type="checkbox">Python</input><br>
         <input type="submit" value="Login"></input> 
+        <input type="reset">
+        <p>
+            <input type="button" value="Button1">
+            <input type="submit">
+            <button>Submit</button>
+        </p>
     </form>
 </body>
 </html>
