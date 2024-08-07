@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #right{
-            text-align: end;
-        }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        background-color: #f0f0f0;
+      }
+
+      .app-name {
+        flex: 1;
+      }
+
+      .nav-items {
+        display: flex;
+        gap: 15px;
+      }
+
+      .nav-items a {
+        text-decoration: none;
+        color: black;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: 5px solid black;
+        border-right: none;
+        border-left: none;
+        height: 500px;
+        width: auto;
+        padding: 30px;
+      }
+
+      footer{
+        text-align: center;
+      }
+      /* .incon {
+        border: 5px solid black;
+        height: auto;
+        width: 100px;
+        justify-items: auto;
+      } */
     </style>
-</head>
-<body>
-    <div>
-        <h2>My Application</h2>
-        <div id="right">Home Services Contact Login</div>
-    </div><hr>
-</body>
+  </head>
+  <body>
+    <nav>
+      <div class="app-name">
+        <h1>Assignment 2</h1>
+      </div>
+      <div class="nav-items">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Subscriptions</a>
+        <a href="#">Login</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="incon">
+        <img src="https://picsum.photos/id/237/200/300" alt="Image 1">
+      </div>
+      <div class="incon"><img src="https://picsum.photos/200/300" alt="Image 2"></div>
+      <div class="incon"> <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 3"></div>
+    </div>
+    <footer>
+        This is a Footer
+    </footer>
+  </body>
 </html>

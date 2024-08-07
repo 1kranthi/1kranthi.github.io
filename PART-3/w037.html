@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media only screen and (max-width:600px){
+            /* for mobile */
+          .box{
+            background-color:silver;
+            width:100%
+          }
+
+        }
+        @media only screen and (min-width:600px){
+            /* for tablets */
+            .box{
+                background-color: aquamarine;
+                width:50%;
+            }
+        }
+        @media only screen and (min-width:768px){
+            /* for desktop */
+            .box{
+                background-color: chartreuse;
+                width:25%;
+            }
+
+        }
+        /* @media only screen and (orientation:landscape){
+            .box{
+                background-color: bisque;
+            }
+        }
+        @media only screen and (orientation:portrait){
+            .box{
+                background-color: brown;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Welcome</div>
+        <div class="box">Welcome</div>
+        <div class="box">Welcome</div>
+        <div class="box">Welcome</div>
+    </div>
+</body>
+</html>

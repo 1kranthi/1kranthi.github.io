@@ -52,6 +52,25 @@
         .banner p {
             font-size: 1.5rem;
         }
+        .search-input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e50914;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #f40612;
+}
         .content {
             padding: 20px;
         }
@@ -95,10 +114,10 @@
             <h1> Unlimited movies, TV shows and more</h1>
             <p>Watch anywhere. Cancel anytime.</p>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <div style="display: flex;justify-content: center;">
-              <input  type="email" placeholder="Enter Email">
-              <button style="background-color: red;">GetStarted</button>
-              </div>
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="Search for movies, TV shows, genres, etc.">
+              <button class="search-button">Search</button>
+          </div>
         </div>
     </section>
     <section class="content">
@@ -140,8 +159,8 @@
    </div>
    <p style="text-align: center;">Ready to watch? Enter your email to create or restart your membership.</p>
    <div style="display: flex;justify-content: center;">
-    <input  type="email" placeholder="Enter Email">
-    <button style="background-color: red;">GetStarted</button>
+    <input  type="email" class="search-input" placeholder="Enter Email">
+    <button class="search-button">GetStarted</button>
     </div>
    <hr>
    <div style="font-size: small;">
