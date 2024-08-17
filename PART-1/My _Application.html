@@ -29,19 +29,35 @@
       .container {
         display: flex;
         align-items: center;
-        /* justify-content: space-around; */
+        justify-content: space-around;
         border: 5px solid black;
         border-right: none;
         border-left: none;
         height: 500px;
         width: auto;
         padding: 30px;
-        justify-content: center;
+        box-shadow: inset;
+        /* justify-content: center; */
       }
 
       footer{
         text-align: center;
         background-color: cornflowerblue;
+      }
+
+      .photo{
+        width:250px;
+        height:250px;
+        /* position: relative; */
+        display: flex;
+      }
+      #para{
+        text-wrap: wrap;
+      }
+      nav h2{
+        margin-left: 100px;
+        text-align: center;
+        max-width: 550px;
       }
     </style>
   </head>
@@ -56,6 +72,13 @@
         <a href="#">Subscriptions</a>
         <a href="#">Login</a>
       </div>
+      
+    </nav>
+    <nav>
+    <div class="left"><h2>Your Journey with Student Tribe Doesn't End Here – It's Just the Beginning. Stay Curious, Stay Connected, Stay Ahead!</h2></div>
+    <div class="photo">
+      <img src="/images/st.png" alt="Image1">
+    </div>
     </nav>
     <div class="container">
       <div class="incon">
