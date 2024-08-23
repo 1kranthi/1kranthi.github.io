@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div ::first-line{
+            color: aqua;
+        }
+        div::first-letter{
+            font-size: 20px;
+            color: chocolate;
+        }
+        p::before{
+            content:url("https://picsum.photos/200/300");
+        }
+        ::marker{
+            color:brown;
+            font-size: 25px;
+        }
+        ::selection{
+         color:blueviolet;
+         background: darkcyan   ;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores. Necessitatibus vitae rem nam sit blanditiis in facilis nemo et quia illum? Ipsam veritatis consectetur sequi alias officiis, error rerum!</div>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, sapiente quasi. Delectus consequatur expedita, accusantium perspiciatis cupiditate libero a dolore maiores illum quo earum cum nemo amet saepe, velit officia?</p>
+</body>
+</html>
