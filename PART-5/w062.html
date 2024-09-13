@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .box{
+        width:1000px;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        }
+    .one{
+        background-color: aquamarine;
+        width:1000px;
+        height:200px;
+        /* position: absolute; */
+    }
+
+    .two{
+        background-color: bisque;
+        width:1000px;
+        height:500px;
+        top:100px;
+        left:500px;
+        /* position:relative; */
+        /* position: absolute; */
+    }
+    .three{
+        background-color: brown;
+        width:1000px;
+        height:500px;
+    }
+    img{
+        width:200px;
+        height:200px;
+        /* position: fixed; */
+        /* bottom:80px;
+        left:50px; */
+    }
+    .pic{
+        width:200px;
+        height:200px;
+        position:sticky;
+        top:5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one">One</div>
+        <div class="pic"><img src="images/Testiminial2.avif" alt=""></div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+    </div>
+</body>
+</html>
