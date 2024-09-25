@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+
+        }
+        .td{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+   <table>
+       <tr class="td">
+         <td id="td1"></td>
+         <td id="td2"></td>
+       </tr>
+       <tr>
+        <td id="set"></td>
+        <td id="set1"></td>
+      </tr>
+   </table>
+   <script>
+    document.getElementById("td1").innerHTML="Marks"
+    document.getElementById("td2").innerHTML="Result"
+
+    let marks=prompt("enter your marks");
+    if(marks<35 && marks>0){
+        documet.getElementById("set").innerHTML=marks;
+        documet.getElementById("set1").innerHTML="failed";
+    }else if(marks>35 && marks<100){
+        documet.getElementById("set").innerHTML=marks;
+        documet.getElementById("set1").innerHTML="passes";
+    }else{
+        alert("invalid");
+    }
+   </script>
+</body>
+</html>
