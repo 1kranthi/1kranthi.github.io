@@ -4,15 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        table,td,tr{
+           border: 1px solid black;
+           /* width:100%   ; */
+        }
+    </style>
 </head>
 <body>
+
+    <table>
+        <tr>
+            <td>Salary</td>
+            <td>Tax Amount</td>
+            <td>Take Home Salary</td>
+        </tr>
+        <tr>
+            <td id="s"></td>
+            <td id="t"></td>
+            <td id="th"></td>
+        </tr>
+    </table>
+    <!-- <h1>Javascript</h1> -->
+    <h3 id="txt"> </h3>
     <script>
-        let num1=prompt("Enter the rate of intrest:");
-        let num2=prompt("Enter the principle amount")
-    
-        let total=(Number(num1)*Number(num2))/100
-    
-        document.write(total)
-       </script>
+       let amount=prompt("enter the salary")
+       if(amount<=30000){
+         document.getElementById('s').innerHTML=amount
+         document.getElementById('t').innerHTML="0";
+         document.getElementById('th').innerHTML=amount
+       }else if(amount>30000 && amount<=40000){
+        let tax=amount*(5/100);
+        let rem=amount-tax;
+        document.getElementById('s').innerHTML=amount
+        document.getElementById('t').innerHTML=tax;
+        document.getElementById('th').innerHTML=rem;
+       }else if(amount>40000 && amount<=5000){
+        let tax=amount*(10/100);
+        let rem=amount-tax;
+        document.getElementById('s').innerHTML=amount
+        document.getElementById('t').innerHTML=tax;
+        document.getElementById('th').innerHTML=rem;
+       }else if(amount>50000){
+        document.getElementById('s').innerHTML=amount
+        let tax=document.getElementById('t').innerHTML=amount*(12/100);
+        document.getElementById('th').innerHTML=amount-tax;
+       }
+    </script>
 </body>
 </html>
